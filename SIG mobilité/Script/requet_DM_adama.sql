@@ -1,4 +1,4 @@
-----Verifier le système de projection des mes tables 
+----Verifier le système de projection de mes tables 
 select ST_SRID(geom)
 FROM arrets
 
@@ -362,3 +362,4 @@ SELECT DISTINCT
 FROM equipement e
 JOIN lignes l ON ST_DWithin(e.geom, l.geom, 100)
 WHERE e.libelle ILIKE '%PHARMACIE%' OR e.libelle ILIKE '%MEDECIN%';
+
